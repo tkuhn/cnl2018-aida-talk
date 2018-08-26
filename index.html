@@ -74,13 +74,13 @@ text-transform: none;
 </section>
 
 <section>
-<h3>How can we Get such Networks of Results and Knowledge?</h3>
-<p><span class="cem2">Communicating scientific findings in a way that</span></p>
+<h3>Networks of Results/Knowledge</h3>
+<p><span class="cem2">Letting researchers communicate their findings in a way that</span></p>
 <ul>
 <li>allows for <span class="cem">machine-interpretable</span> representations (as compared to narrative papers in English)</li>
-<li>is <span class="cem">general</span> (i.e. applies to all of science, and possibly beyond)</li>
+<li>is <span class="cem">general</span> (i.e. applies to all of science)</li>
 <li>is <span class="cem">simple and intuitive</span> (i.e. doesn't require a background in formal methods to be used)</li>
-<li>is <span class="cem">flexible</span> in the sense that formal, semi-formal, and informal statements are supported</li>
+<li>is <span class="cem">flexible</span> (i.e. doesn't require full formalization)</li>
 </ul>
 </section>
 
@@ -91,6 +91,8 @@ text-transform: none;
 <li>Controlled Natural Language</li>
 <li>English sentences that are <span class="cem">Atomic, Independent, Declarative, and Absolute</span></li>
 <li>PENS type: P<sup>2</sup>E<sup>5</sup>N<sup>4</sup>S<sup>1</sup></li>
+<li><a href="https://github.com/tkuhn/aida">https://github.com/tkuhn/aida</a></li>
+<li><small>Kuhn, Barbano, Nagy, and Krauthammer. Broadening the Scope of Nanopublications. In Proceedings of the 10th Extended Semantic Web Conference (ESWC). Springer, 2013.</small></li>
 </ul>
 </section>
 
@@ -100,7 +102,7 @@ text-transform: none;
 <li><span class="cem">Atomic:</span> a sentence describing one thought that cannot be further broken down in a practical way</li>
 <li><span class="cem">Independent:</span> a sentence that can stand on its own, without external references like "this effect" or "we"</li>
 <li><span class="cem">Declarative:</span> a complete sentence ending with a full stop that could (at least in theory) be true or false</li>
-<li><span class="cem">Absolute:</span> a sentence describing the core of a claim ignoring the (un)certainty about its truth and ignoring how it was discovered (without phrases such as "probably" or "evaluation showed that"</li>
+<li><span class="cem">Absolute:</span> a sentence describing the core of a claim ignoring the (un)certainty about its truth and ignoring how it was discovered (without phrases such as "probably" or "evaluation showed that")</li>
 </ul>
 </section>
 
@@ -133,44 +135,83 @@ text-transform: none;
 
 <section>
 <h3>Related Controlled Natural Languages</h3>
-<p>...</p>
-<p>AIDA is unique as a CNL for knowledge representation that focuses on expressivity instead of precision.</p>
+<p><span class="cem">Basic English (~1930):</span> designed to improve the global communication in politics, economy, and <span class="cem2">science</span>.</p>
+<p>Other CNLs (ACE, CLEF) proposed for scientific results: limited by expressiveness of logic formalism and coverage of vocabularies.</p>
+<p><span class="cem2">AIDA is unique as a CNL for knowledge representation that focuses on expressivity instead of precision.</span></p>
 </section>
 
 <section>
-<h3>Previous Work</h3>
-...
+<h3>Research Questions</h3>
+<p><span class="cem">About AIDA sentences:</span></p>
+<ul>
+<li>How easily can researchers write them?</li>
+<li>How easily can they be automatically extracted?</li>
+<li><span class="cem2">Are they really general and cover everything?</span></li>
+<li><span class="cem2">Do researchers like them?</span></li>
+<li><span class="cem2">Can they be easily linked and formalized?</span></li>
+<li>...</li>
+</ul>
+</section>
+
+<section>
+<h3>Previous Studies</h3>
+<p>First study on <span class="cem">manual creation</span> of AIDA sentences from abstracts by <span class="cem2">untrained researchers</span></p>
+<p>Second study on <span class="cem">automatic creation</span> of AIDA sentences from abstracts with a <span class="cem2">simple algorithm</span></p>
+<p>In both studies, about <span class="cem2">70%</span> of the created AIDA sentences were <span class="cem2">perfectly accurate</span></p>
 </section>
 
 <section>
 <h3>Data: 659 AIDA Sentences</h3>
-<p>Previous work:</p>
+<p><span class="cem">Previous work:</span></p>
 <ul>
-<li>Manual extraction study: 51 AIDA sentences</li>
-<li>Automatic extraction study: 189 AIDA sentences</li>
+<li>Manual extraction study: <span class="cem2">51</span> AIDA sentences</li>
+<li>Automatic extraction study: <span class="cem2">189</span> AIDA sentences</li>
 </ul>
-<p>Case studies:</p>
+<p><span class="cem">Case studies:</span></p>
 <ul>
-<li>Alzheimer's: 62 AIDA sentences</li>
-<li>Open Access: 70 AIDA sentences</li>
+<li>Alzheimer's: <span class="cem2">62</span> AIDA sentences</li>
+<li>Open Access: <span class="cem2">70</span> AIDA sentences</li>
 </ul>
-<p>Personal collection:</p>
-<li>287 AIDA sentences</li>
+<p><span class="cem">Personal collection:</span></p>
+<li><span class="cem2">287</span> AIDA sentences</li>
 </section>
 
 <section>
 <h3>Alzheimer's Case Study</h3>
+<p>Manually representing the main statements of meta-review as AIDA sentences:</p>
+<ul>
+<li>Cochrane Library report on <a href="https://doi.org/10.1002/14651858.CD005593">"Cholinesterase inhibitors for Alzheimer's disease"</a></li>
+<li>Summarizes evidence and findings from various publications on the topic</li>
+<li>Led to 62 AIDA sentences</li>
+<li>Example: <small>"The treatment of Alzheimer's disease with one of the three cholinesterase inhibitors donepezil, galantamine or rivastigmine improves the patients' score in the Progressive Deterioration Scale (PDS)."</small></li>
+</ul>
+</section>
+
+<section>
+<h3>Alzheimer's Case Study:<br>Three Levels of Statements</h3>
 <img class="plain stretch" src="img/alzheimers.png"/>
 </section>
 
 <section>
 <h3>Open Access Case Study</h3>
-...
+<p>Manually representing the statements of another meta-review:</p>
+<ul>
+<li><a href="https://sparceurope.org/what-we-do/open-access/sparc-europe-open-access-resources/open-access-citation-advantage-service-oaca/">On Open Access citation advantage</a></li>
+<li>General AIDA sentence: "Open Access publications receive on average more citations than similar publications that are not Open Access."</li>
+<li>More specific ones, e.g. "Open Access publications <span class="cem2">in astronomy and physics</span> receive ..."</li>
+<li>Total: AIDA sentences for 70 publications</li>
+</ul>
 </section>
 
 <section>
 <h3>User Study</h3>
-...
+<p>AIDA sentences in the classroom setting:</p>
+<ul>
+<li>Course entitled "Knowledge and Media"</li>
+<li>AIDA sentences used for summarizing papers (2015-2017, 20 papers each year)</li>
+<li>Should help students remember and understand the main content of the papers</li>
+<li>Questionnaire about AIDA at end of course</li>
+</ul>
 </section>
 
 <section>
@@ -193,12 +234,20 @@ text-transform: none;
 
 <section>
 <h3>User Study Results</h3>
-<img class="plain stretch" src="img/user-study-results.svg"/>
+<img class="plain stretch" src="img/user-study-results-1.svg"/>
+<p>70% found AIDA sentences to be helpful;<br>only 1.6% found them not helpful</p>
+</section>
+
+<section>
+<h3>User Study Results</h3>
+<img class="plain stretch" src="img/user-study-results-2.svg"/>
+<p>45% prefer AIDA sentences;<br>only 3.6% prefer classical summaries</p>
 </section>
 
 <section>
 <h3>Linking and Network Study</h3>
-...
+<p>Analyzing the effect of simple post-hoc partial formalization of AIDA sentences.</p>
+<p><span class="cem">Use of DBpedia Spotlight:</span> text annotation tool producing links to DBpedia (Wikipedia pages).</p>
 </section>
 
 <section>
